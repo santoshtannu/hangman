@@ -1,5 +1,5 @@
 import random
-import hangman_words
+from hangman_words import word_list
 import hangman_art
 
 # TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
@@ -7,8 +7,8 @@ import hangman_art
 lives = 6
 
 # TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
-
-chosen_word = random.choice(hangman_words.word_list)
+print(hangman_art.logo)
+chosen_word = random.choice(word_list)
 print(chosen_word)
 
 placeholder = ""
